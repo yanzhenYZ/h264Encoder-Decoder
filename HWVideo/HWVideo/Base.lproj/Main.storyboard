@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uvE-C8-1Qx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4jh-cz-LCx" customClass="VideoDisplayView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4jh-cz-LCx" secondAttribute="trailing" id="4ya-dq-azk"/>
+                            <constraint firstItem="4jh-cz-LCx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BjX-fI-ujI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4jh-cz-LCx" secondAttribute="bottom" id="I4z-hU-2hd"/>
+                            <constraint firstItem="4jh-cz-LCx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="zb4-bc-wFX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jNt-m7-psl">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="Idp-5d-PB3">
+                            <connections>
+                                <action selector="enableVideo:" destination="BYZ-38-t0r" id="Wn6-gP-UPi"/>
+                            </connections>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Start" id="pFh-3D-e13">
+                                <connections>
+                                    <action selector="startVideo:" destination="BYZ-38-t0r" id="gha-wr-zOF"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="camera" id="YOk-wb-QUr">
+                                <connections>
+                                    <action selector="switchCamera:" destination="BYZ-38-t0r" id="y2E-i0-cCy"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="showView" destination="4jh-cz-LCx" id="b9S-cW-gcC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="272.80000000000001" y="213.64317841079463"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vx4-KQ-VuY">
+            <objects>
+                <navigationController id="uvE-C8-1Qx" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jWd-Zb-A3V">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fgu-kC-wqC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tdx-gA-v0v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-626" y="214"/>
+        </scene>
+    </scenes>
+</document>
