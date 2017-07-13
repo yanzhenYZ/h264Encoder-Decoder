@@ -25,8 +25,6 @@
 		29782DE51CD8A3CB005D45B5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		29782DE61CD8A3CB005D45B5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		29782DEB1CD8A3CB005D45B5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		29782DF91CD8A3CB005D45B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29782DFA1CD8A3CB005D45B5 /* VTH264examplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTH264examplesTests.m; sourceTree = "<group>"; };
 		29782E051CD8A400005D45B5 /* H264HwDecoderImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H264HwDecoderImpl.h; sourceTree = "<group>"; };
 		29782E061CD8A400005D45B5 /* H264HwDecoderImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H264HwDecoderImpl.m; sourceTree = "<group>"; };
 		29782E071CD8A400005D45B5 /* H264HwEncoderImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H264HwEncoderImpl.h; sourceTree = "<group>"; };
@@ -51,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				29782DDD1CD8A3CB005D45B5 /* VTH264examples */,
-				29782DF71CD8A3CB005D45B5 /* VTH264examplesTests */,
 				29782DDC1CD8A3CB005D45B5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,23 +81,6 @@
 			children = (
 				29782DDF1CD8A3CB005D45B5 /* Info.plist */,
 				29782DE01CD8A3CB005D45B5 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		29782DF71CD8A3CB005D45B5 /* VTH264examplesTests */ = {
-			isa = PBXGroup;
-			children = (
-				29782DFA1CD8A3CB005D45B5 /* VTH264examplesTests.m */,
-				29782DF81CD8A3CB005D45B5 /* Supporting Files */,
-			);
-			path = VTH264examplesTests;
-			sourceTree = "<group>";
-		};
-		29782DF81CD8A3CB005D45B5 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				29782DF91CD8A3CB005D45B5 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
